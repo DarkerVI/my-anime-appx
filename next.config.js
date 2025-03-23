@@ -5,6 +5,10 @@
 await import("./src/env.js");
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+  images: {
+    domains: ["cdn.myanimelist.net"], // أضف النطاقات المسموح بها هنا
+  },
+};
 
 export default config;
